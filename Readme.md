@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
-* Студент: [Stepan Poletaev](https://up.htmlacademy.ru/adaptive/26/user/1890943).
-* Наставник: `Неизвестно`.
+* Студент: [Степан Полетаев](https://up.htmlacademy.ru/adaptive/26/user/1890943).
+* Наставник: [Павел Позняк](https://htmlacademy.ru/profile/id907403).
 
 ---
 

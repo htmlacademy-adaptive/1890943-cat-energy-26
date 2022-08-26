@@ -17,16 +17,16 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item ">
-              <a>
+              <a href="index.html">
                 Главная
               </a>
             </li>
-            <li class="site-list__item site-list__item--active">
+            <li class="site-list__item ">
               <a href="catalog.html">
                 Каталог продукции
               </a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--active">
               <a href="form.html">
                 Подбор программы
               </a>
@@ -36,9 +36,89 @@
       </nav>
     </header>
     <main class="main-container">
-
+      <form class="form-request">
+        <h2 class="form-request__title-main">Подбор программы</h2>
+        <p class="form-request__desc">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <div class="form-request__field-group field-group">
+          <label class="field-group__label" for="form-request__cat-name">ИМЯ:*</label>
+          <input class="field-group__field" type="text" id="form-request__cat-name" name="form-request__cat-name" placeholder="Барсик"></div>
+        <div class="form-request__field-group field-group">
+          <label class="field-group__label" for="form-request__cat-weigth">Вес (кг):*</label>
+          <input class="field-group__field" type="number" id="form-request__cat-weigth" name="form-request__cat-weigth" placeholder="7"></div>
+        <div class="form-request__field-group field-group">
+          <label class="field-group__label" for="form-request__cat-age">Возраст (лет):</label>
+          <input class="field-group__field" type="number" id="form-request__cat-age" name="form-request__cat-age" placeholder="7"></div>
+        <div class="form-request__filter">
+          <ul class="form-request__filter-list filter-list">
+            <li class="filter-list__item">
+              <label class="filter-list__item-control control">
+                <input class="visually-hidden control__input" type="radio" name="control__item-slim"> <span class="control__mark"></span> <span class="control__label">Похудение</span>
+              </label>
+            </li>
+            <li class="filter-list__item">
+              <label class="filter-list__item-control control">
+                <input class="visually-hidden control__input" type="radio" name="control__item-pro"> <span class="control__mark"></span> <span class="control__label">Набор массы</span>
+              </label>
+            </li>
+            <li class="filter-list__item">
+              <label class="filter-list__item-control control">
+                <input class="visually-hidden control__input" type="radio" name="control__item-advice"> <span class="control__mark"></span> <span class="control__label">Не знаю (Нужен ваш совет)</span>
+              </label>
+            </li>
+          </ul>
+        </div>
+        <div class="form-request__contact-details contact-details">
+          <p class="contact-details__title title-secondary">Контактные данные (владельца кота)</p>
+          <div class="contact-details__field-group field-group">
+            <label class="field-group__label" for="form-request__email">E-mail:*</label>
+            <input class="field-group__field" type="email" id="form-request__email" name="form-request__email" placeholder="kuklachev@gmail.com"></div>
+          <div class="form-request__field-group field-group">
+            <label class="field-group__label" for="form-request__tel">Возраст (лет):</label>
+            <input class="field-group__field" type="tel" id="form-request__tel" name="form-request__tel" placeholder="8 (960) 900-60-90"></div>
+        </div>
+        <div class="form-request__comment comment">
+          <p class="comment__title title-secondary">Комментарий</p>
+          <div class="comment__field-group field-group">
+            <label class="visually-hidden field-group__label" for="form-request__comment">Комментарий.</label>
+            <input class="field-group__field field-group__field--large" type="text" id="form-request__comment" name="form-request__comment" placeholder="Расскажите обо всех повАдках кота"></div>
+        </div>
+        <div class="form-request__extra extra">
+          <p class="extra__title title-secondary">Дополнительно</p>
+          <ul class="extra__filter-list filter-list">
+            <li class="filter-list__item">
+              <label class="filter-list__item-control control">
+                <input class="visually-hidden control__input" type="checkbox" name="control__item-sweetener"> <span class="control__mark"></span> <span class="control__label">Сахарозаменитель</span>
+              </label>
+            </li>
+            <li class="filter-list__item">
+              <label class="filter-list__item-control control">
+                <input class="visually-hidden control__input" type="checkbox" name="control__item-water"> <span class="control__mark"></span> <span class="control__label">Питьевая вода</span>
+              </label>
+            </li>
+            <li class="filter-list__item">
+              <label class="filter-list__item-control control">
+                <input class="visually-hidden control__input" type="checkbox" name="control__item-milk"> <span class="control__mark"></span> <span class="control__label">Молоко</span>
+              </label>
+            </li>
+            <li class="filter-list__item">
+              <label class="filter-list__item-control control">
+                <input class="visually-hidden control__input" type="checkbox" name="control__item-vitamins"> <span class="control__mark"></span> <span class="control__label">Витамины</span>
+              </label>
+            </li>
+          </ul>
+        </div>
+      </form>
     </main>
     <footer class="main-footer">
+      <section class="main-footer__contacts contacts">
+        <div class="contacts__text-block text-block">
+          <span class="text-block__invite">Приглашаем к сотрудничеству дилеров!</span>
+          <span class="text-block__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span>
+        </div>
+        <div class="contacts__map">
+
+        </div>
+      </section>
       <div class="main-footer__wrapper">
         <a class="main-footer__logo-text logo-text" href="index.html">
           <img class="logo-text__img" src="#" width="128" height="24" alt="Cat Energy."

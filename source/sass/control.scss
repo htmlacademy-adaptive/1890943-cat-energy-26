@@ -1,0 +1,65 @@
+.control {
+  position: relative;
+	display: block;
+  padding-left: 46px;
+}
+
+.control__label {
+  font-size: 16px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.control__mark {
+  position: absolute;
+	top: -5px;
+	left: 0;
+	width: 30px;
+	height: 30px;
+	background: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  border: 1px solid #CDCDCD;
+}
+
+.control:hover .control__mark {
+	background: rgba(255, 255, 255, 0.6);
+}
+
+.control__input:focus + .control-mark {
+	outline: 3px solid #83B3D3;
+	;
+}
+
+.control__input:active + .control-mark {
+	background: rgba(255, 255, 255, 0.3);
+}
+
+/* Checkbox */
+.control__input[type="checkbox"]:checked + .control__mark::before,
+.control__input[type="checkbox"]:checked + .control__mark::after {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: url("../img/icons/checkbox.svg") center no-repeat;
+	content: "";
+}
+
+/* Radio */
+.control__input[type="radio"] + .control__mark {
+	border-radius: 50%;
+}
+
+.control__input[type="radio"]:checked + .control__mark::before {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background: #3F5E72;
+	border-radius: 50%;
+	content: "";
+}
+

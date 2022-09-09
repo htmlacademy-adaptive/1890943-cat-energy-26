@@ -1,0 +1,34 @@
+.contacts {
+
+}
+
+.contacts--catalog {
+  background: #F2F2F2;
+}
+
+.contacts--form {
+  background: #F2F2F2;
+}
+
+.contacts__text-block {
+  padding: 26px 20px;
+  display: flex;
+  min-height: 60px;
+  gap: 2px;
+}
+
+.contacts__text-block-invite {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  min-width: 139px;
+  display: block;
+}
+
+.contacts__text-block-adress {
+  min-width: 139px;
+}

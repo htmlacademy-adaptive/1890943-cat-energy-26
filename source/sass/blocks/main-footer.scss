@@ -1,0 +1,42 @@
+.main-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 39px 20px 0 20px;
+
+  background-color: $color-white-smoke;
+}
+
+.main-footer__logo {
+  width: 100%;
+  padding-bottom: 32px;
+
+  text-align: center;
+
+  border-bottom: 1px solid $color-gainsboro;
+}
+
+.main-footer__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 63px;
+
+  border-bottom: 1px solid $color-gainsboro;
+}
+
+.main-footer__copyright-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 78px;
+
+  text-decoration: none;
+}
+
+.main-footer__copyright-caption {
+  color: $color-charcoal;
+  text-decoration: none;
+}

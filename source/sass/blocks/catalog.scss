@@ -1,0 +1,40 @@
+.catalog__title {
+  margin-bottom: 19px;
+  padding: 27px 20px 41px 20px;
+
+  font-size: 36px;
+  line-height: 36px;
+  color: $color-default-black;
+
+  border-top: 1px solid $color-gainsboro;
+  border-bottom: 1px solid $color-whisper;
+
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+
+.catalog__show-more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 20px;
+
+  border-bottom: 1px solid $color-whisper;
+}
+
+.catalog__show-more-text-main {
+  margin: 23px 0 8px 0;
+
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: $color-black;
+  text-transform: uppercase;
+
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+
+.catalog__show-more-text-secondary {
+  padding-bottom: 21px;
+}

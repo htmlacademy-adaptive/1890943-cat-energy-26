@@ -1,0 +1,41 @@
+.main-header__logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+  margin: 0 20px;
+}
+
+.main-header__logo-link {
+  display: flex;
+  align-items: center;
+
+  list-style: none;
+}
+
+.main-header__toggle {
+  width: 24px;
+  height: 18px;
+
+  background-color: $color-default-white;
+  background-image: url("../img/toggle.svg");
+  border: none;
+
+  &--active {
+    background-image: url("../img/toggle-active.svg");
+  }
+}
+
+@media (min-width: 768px) {
+  .main-header__toggle {
+    display: none;
+  }
+}
+
+.main-header__nav {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}

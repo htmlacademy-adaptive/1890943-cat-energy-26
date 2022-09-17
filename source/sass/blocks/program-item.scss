@@ -1,0 +1,33 @@
+.program-item {
+  padding: 0 20px 22px 20px;
+
+  background: $color-white-smoke;
+}
+
+.program-item__title {
+  margin: 0;
+  padding: 30px 0 29px 71px;
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  color: $color-default-black;
+  text-transform: uppercase;
+}
+
+.program-item__text {
+  display: block;
+  margin-bottom: 19px;
+  padding-bottom: 23px;
+
+  border-bottom: 1px solid $color-gainsboro;
+}
+
+.program-item__button {
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  color: $color-default-black;
+  text-transform: uppercase;
+  text-decoration: none;
+}

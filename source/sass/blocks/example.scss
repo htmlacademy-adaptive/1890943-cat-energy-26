@@ -1,16 +1,16 @@
 .example {
   padding: 25px 20px 40px 20px;
-  background: #EAEAEA;
+
+  background-color: $color-whisper-2;
 }
 
 .example__title {
+  margin: 0;
+  margin-bottom: 40px;
+
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  font-weight: bold;
-  margin-bottom: 40px;
 }
 
 .example__text {
@@ -19,53 +19,62 @@
 
 .example__indicators {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
+
   background: inherit;
 }
 
 .example__indicators-item {
   position: relative;
-  height: 54px;
-  width: 122px;
-  border: 1px solid #CDCDCD;
-  border-radius: 3px;
+
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  width: 122px;
+  height: 54px;
+
   background: inherit;
+  border: 1px solid $color-very-light-gray;
+  border-radius: 3px;
 }
 
 .example__indicators-item-value {
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
+
   margin-inline-start: 0;
 }
 
 .example__indicators-item-desc {
   position: absolute;
-  background: inherit;
   bottom: -14px;
-  width: 67px;
-  padding: 0 10px;
-  font-size: 12px;
-  line-height: 12px;
+
   display: flex;
   align-items: center;
+  width: 67px;
+  padding: 0 10px;
+
+  font-size: 12px;
+  line-height: 12px;
   text-align: center;
-  color: #444444;
+  color: $color-charcoal;
+
+  background: inherit;
 }
 
 .example__indicators-item-price {
-  margin-top: 34px;
-  width: 100%;
   display: flex;
-  gap: 5px;
-  text-transform: uppercase;
   justify-content: center;
+  width: 100%;
+  margin-top: 34px;
+
+  text-transform: uppercase;
+
+  gap: 5px;
 }
 
-.example__indicators-item-price-value{
+.example__indicators-item-price-value {
   margin-inline-start: 0;
 }

@@ -1,28 +1,31 @@
 .product-card-more {
   padding: 13px 0 19px 0;
-  border-bottom: 1px solid #CDCDCD;;
+
+  border-bottom: 1px solid $color-very-light-gray;
 }
 
 .product-card-more__title {
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
+  color: $color-nero;
   text-transform: uppercase;
-  color: #222222;
-  margin-block-start: 0;
-  margin-block-end: 0;
 
+  margin-block-end: 0;
+  margin-block-start: 0;
 }
 
 .product-card-more__info {
   display: flex;
   justify-content: space-between;
-  margin-block-start: 13px;
-  margin-block-end: 15px;
-  font-family: 'Arial';
+
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
-  color: #444444;
+  font-family: $ff-arial;
+  color: $color-charcoal;
+
+  margin-block-end: 15px;
+  margin-block-start: 13px;
 }

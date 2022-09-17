@@ -1,73 +1,28 @@
-// Начните писать стили здесь
-@use "main-header.scss";
-@use "main-nav.scss";
-@use "promo.scss";
-@use "button.scss";
-@use "programs.scss";
-@use "program-item.scss";
-@use "how-it-works.scss";
-@use "example.scss";
-@use "cat-slider.scss";
-@use "contacts.scss";
-@use "main-footer.scss";
-@use "social.scss";
-@use "catalog.scss";
-@use "product-card.scss";
-@use "additional-goods.scss";
-@use "product-card-more.scss";
-@use "form-request.scss";
-@use "control.scss";
-@use "filter-list.scss";
+@import "global/fonts";
+@import "global/utils";
+@import "global/variables";
 
-.page__body {
-  margin: 0;
-  font-family: 'Oswald' , sans-serif;
-  font-style: normal;
-  font-weight: 400;
-}
+@import "vendor/normalize";
 
-.visually-hidden {
-  position: absolute;
-	width: 1px;
-	height: 1px;
-	margin: -1px;
-	border: 0;
-	padding: 0;
-	white-space: nowrap;
-	clip-path: inset(100%);
-	clip: rect(0 0 0 0);
-	overflow: hidden;
-}
-
-.text-basic {
-  font-family: 'Arial';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  color: #444444;
-  margin-block-start: 0;
-  margin-block-end: 0;
-}
-
-.title-secondary {
-  position: relative;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
-  width: 280px;
-  text-align: center;
-  color: #000000;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  text-align: left;
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 53px;
-    border: 2px solid #68B738;
-    top: 15px;
-    right: -20px;
-  }
-}
+@import "blocks/page";
+@import "blocks/basic-text";
+@import "blocks/title-secondary";
+@import "blocks/main-header";
+@import "blocks/main-nav";
+@import "blocks/promo";
+@import "blocks/button";
+@import "blocks/programs";
+@import "blocks/program-item";
+@import "blocks/how-it-works";
+@import "blocks/example";
+@import "blocks/cat-slider";
+@import "blocks/contacts";
+@import "blocks/main-footer";
+@import "blocks/social";
+@import "blocks/catalog";
+@import "blocks/product-card";
+@import "blocks/additional-goods";
+@import "blocks/product-card-more";
+@import "blocks/form-request";
+@import "blocks/control";
+@import "blocks/filter-list";

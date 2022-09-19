@@ -30,4 +30,34 @@
 
 .contacts__text-block-adress {
   min-width: 139px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: $ff-arial;
+  color: $color-charcoal;
+}
+
+@media (min-width: $vp-768) {
+  .contacts__text-block {
+    justify-content: space-between;
+    min-height: 80px;
+    padding: 60px 70px 55px 70px;
+
+    gap: unset;
+  }
+
+  .contacts__text-block-invite {
+    width: 160px;
+
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .contacts__text-block-adress {
+    width: 180px;
+
+    font-size: 16px;
+    line-height: 20px;
+  }
 }

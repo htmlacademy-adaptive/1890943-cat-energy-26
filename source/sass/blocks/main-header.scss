@@ -1,3 +1,10 @@
+.main-header {
+  position: relative;
+
+  background-color: $color-default-white;
+}
+
+
 .main-header__logo {
   display: flex;
   justify-content: space-between;
@@ -17,7 +24,7 @@
   width: 24px;
   height: 18px;
 
-  background-color: $color-default-white;
+  background-color: inherit;
   background-image: url("../img/toggle.svg");
   border: none;
 
@@ -26,16 +33,55 @@
   }
 }
 
-@media (min-width: 768px) {
-  .main-header__toggle {
-    display: none;
-  }
-}
-
 .main-header__nav {
+  position: absolute;
+
   display: none;
 
   &--active {
     display: block;
+  }
+}
+
+@media (min-width: $vp-768) {
+  .main-header {
+    display: flex;
+    padding: 24px 30px 0 30px;
+  }
+
+  .main-header__logo {
+    display: flex;
+    align-items: center;
+    height: auto;
+    margin: 0;
+
+    gap: 12px;
+  }
+
+  .main-header__toggle {
+    display: none;
+  }
+
+  .main-header__nav {
+    position: relative;
+
+    display: flex;
+    padding-left: 93px;
+  }
+}
+
+@media (min-width: $vp-1440) {
+  .main-header {
+    padding: 54px 110px 0 110px;
+  }
+
+  .main-header__logo {
+    margin-right: auto;
+
+    gap: 14px;
+  }
+
+  .main-header__nav {
+    padding-left: unset;
   }
 }

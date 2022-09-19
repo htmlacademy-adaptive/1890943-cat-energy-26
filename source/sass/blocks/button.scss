@@ -12,6 +12,11 @@
   text-transform: uppercase;
   text-decoration: none;
 
-  background: $color-apple;
+  background-color: $color-apple;
   border: none;
+}
+
+.button--secondary {
+  background-color: $color-white-smoke;
+  color: $color-charcoal;
 }

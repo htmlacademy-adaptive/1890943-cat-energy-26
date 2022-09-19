@@ -1,16 +1,17 @@
 @import "global/fonts";
 @import "global/utils";
 @import "global/variables";
+@import "global/container";
 
 @import "vendor/normalize";
 
 @import "blocks/page";
-@import "blocks/basic-text";
+@import "blocks/text-basic";
 @import "blocks/title-secondary";
+@import "blocks/button";
 @import "blocks/main-header";
 @import "blocks/main-nav";
 @import "blocks/promo";
-@import "blocks/button";
 @import "blocks/programs";
 @import "blocks/program-item";
 @import "blocks/how-it-works";

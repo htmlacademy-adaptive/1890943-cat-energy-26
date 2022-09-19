@@ -15,6 +15,12 @@
 
 .example__text {
   margin-bottom: 20px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $ff-arial;
+  color: $color-charcoal;
 }
 
 .example__indicators {
@@ -77,4 +83,43 @@
 
 .example__indicators-item-price-value {
   margin-inline-start: 0;
+}
+
+
+@media (min-width: $vp-768) {
+  .example {
+    padding: 43px 30px 101px 30px;
+
+    background-color: $color-default-white;
+  }
+
+  .example__title {
+    margin-bottom: 63px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .example__text {
+    margin-bottom: 54px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .example__indicators {
+    justify-content: unset;
+    gap: 42px;
+  }
+
+  .example__indicators-item-price {
+    margin: 0;
+    margin-left: auto;
+    width: unset;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+@media (min-width: $vp-1440) {
 }

@@ -1,0 +1,18 @@
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: $color-default-white;
+
+  @media (min-width: $vp-1440) {
+    max-width: $vp-1440;
+  }
+
+  @media (min-width: $vp-768) and (max-width: $vp-1440) {
+    max-width: $vp-768;
+  }
+
+  @media (min-width: $vp-320) and (max-width: $vp-768) {
+    max-width: $vp-320;
+  }
+}

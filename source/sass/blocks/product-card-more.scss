@@ -29,3 +29,32 @@
   margin-block-end: 15px;
   margin-block-start: 13px;
 }
+
+
+@media (min-width: $vp-768) {
+  .product-card-more {
+    padding: 26px 38px 28px 38px;
+  }
+}
+
+@media (min-width: $vp-1440) {
+  .product-card-more {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0 17px 0;
+  }
+
+  .product-card-more__title {
+    margin-right: auto;
+  }
+
+  .product-card-more__button {
+    width: 244px;
+  }
+
+  .product-card-more__info {
+    margin-right: 38px;
+    width: 288px;
+  }
+}

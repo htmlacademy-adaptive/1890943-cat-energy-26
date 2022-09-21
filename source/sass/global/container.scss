@@ -1,18 +1,13 @@
 .container {
-  width: 100%;
-  max-width: 1440px;
+  max-width: 1340px;
   margin: 0 auto;
-  background-color: $color-default-white;
+  padding: 0 20px;
 
-  @media (min-width: $vp-1440) {
-    max-width: $vp-1440;
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
   }
 
-  @media (min-width: $vp-768) and (max-width: $vp-1440) {
-    max-width: $vp-768;
-  }
-
-  @media (min-width: $vp-320) and (max-width: $vp-768) {
-    max-width: $vp-320;
+  @media (min-width: $desktop-width) {
+    padding: 0 60px;
   }
 }

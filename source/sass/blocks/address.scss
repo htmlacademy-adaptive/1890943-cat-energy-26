@@ -1,22 +1,26 @@
 .address {
   position: relative;
 
-  background-color: $color-white;
-
   @media (min-width: $desktop-width) {
-    padding: 95px 0 107px 110px;
+    padding: 95px 0 107px 0;
+  }
+
+  &--gray {
+    background-color: $color-white-smoke;
+
+    @media (min-width: $desktop-width) {
+      background-color: $color-white;
+    }
   }
 }
 
 .address__wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 26px 20px;
-
-  background-color: $color-white-smoke;
+  padding: 26px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 58px 70px;
+    padding: 58px 38зч;
   }
 
   @media (min-width: $desktop-width) {
@@ -32,10 +36,6 @@
 
     gap: 20px 82px;
     grid-template-columns: 1fr 1fr;
-  }
-
-  &--index {
-    background-color: $color-white;
   }
 }
 
@@ -172,7 +172,6 @@
   display: block;
   width: 100%;
 
-  background-color: $color-silver;
   border: none;
 
   @media (min-width: $tablet-width) {

@@ -140,6 +140,7 @@
   .form__label {
     margin-right: 10px;
 
+    color: $color-charcoal;
     @media (min-width: $tablet-width) {
       margin-right: 16px;
       padding-top: 10px;
@@ -246,6 +247,7 @@
 
       font-size: 20px;
       line-height: 30px;
+      color: $color-black;
     }
   }
 }
@@ -461,6 +463,7 @@
 .form__field-label {
   width: fit-content;
   max-width: 40%;
+  color: $color-charcoal;
 
   @media (min-width: $tablet-width) {
     max-width: 50%;
